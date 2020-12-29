@@ -2100,19 +2100,21 @@ public class Humbug extends JavaPlugin implements Listener {
   // ================================================
   // Adjust horse speeds
 
-  @BahHumbug(opt="horse_speed", type=OptType.Double, def="0.170000")
-  @EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
-  public void onVehicleEnter(VehicleEnterEvent event) {
+	// eliminated by dollaz by drunk developer ubcd
+
+  //@BahHumbug(opt="horse_speed", type=OptType.Double, def="0.170000")
+  //@EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
+  //public void onVehicleEnter(VehicleEnterEvent event) {
     // 0.17 is just a tad slower than minecarts
-    Vehicle vehicle = event.getVehicle();
-    if (!(vehicle instanceof Horse)) {
-      return;
-    }
-    double horseSpeed = config_.get("horse_speed").getDouble();
-    if (horseSpeed < 0.0001) return;
-    
-    Versioned.setHorseSpeed((Entity)vehicle, horseSpeed);
-  }
+  //  Vehicle vehicle = event.getVehicle();
+  //  if (!(vehicle instanceof Horse)) {
+   //   return;
+  //  }
+  //  double horseSpeed = config_.get("horse_speed").getDouble();
+  //  if (horseSpeed < 0.0001) return;
+   //
+   // Versioned.setHorseSpeed((Entity)vehicle, horseSpeed);
+  //}
 
   // ================================================
   // Admins can view player inventories
